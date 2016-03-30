@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DouFM</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_about">关于</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_user_history">UserHistoryActivity</string>
+    <string name="title_activity_user_like">UserLikeActivity</string>
+    <string name="title_activity_upgrade">UpgradeAppActivity</string>
+
+    <string name="title_activity_about">\n
+        后台:dccrazyboy、叶落殇寒\n\n
+        PC前端:亮子\n\n
+        UI:爱笑的眼睛\n\n
+        iOS版:船长\n\n
+        Android版2.0:心在飞翔、Acker、思聪、有风的日子、Yetwish_野鬼\n\n
+        Android版3.0:有风的日子\n\n
+        Android版反馈:863097177@qq.com</string>
+
+</resources>

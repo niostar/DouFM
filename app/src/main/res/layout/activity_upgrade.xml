@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_launcher_doufm"
+        android:layout_below="@+id/toolbar_custom"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_upgrade_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DouFM 3.0.1"
+        android:textColor="@color/upgrade_title_color"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/iv_app_icon"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_upgrade_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/upgrade_content_color"
+        android:textSize="12sp"
+        android:text="第五次更新,本次更新如下内容"
+        android:layout_below="@+id/tv_upgrade_title"
+        />
+
+
+    <Button
+        android:id="@+id/btn_start_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:text="更新"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

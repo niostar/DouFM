@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/play_disc_bg"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_disk"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/fm"
+                        android:scaleType="centerCrop"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:background="@drawable/icn_play_disc"
+                        />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_needle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-25dp"
+                android:src="@drawable/play_needle"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_progress"
+            >
+
+            <Button
+                android:id="@+id/btn_play_mode"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/bg_btn_shuffle"
+                />
+
+            <Button
+                android:id="@+id/btn_love"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/bg_btn_love"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ctrl_btn_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/currentTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                style="@style/SeekBar"
+                />
+
+            <TextView
+                android:id="@+id/totalTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ctrl_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            >
+            <Button
+                android:id="@+id/btn_start_play"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_start_play"
+                />
+            
+            <Button
+                android:id="@+id/btn_play_previous"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_start_play"
+                android:layout_toStartOf="@+id/btn_start_play"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/bg_play_previous"
+                />
+
+            <Button
+                android:id="@+id/btn_play_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_start_play"
+                android:layout_toEndOf="@+id/btn_start_play"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/bg_play_next"
+                />
+            
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_slide_left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="left|start"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_slide_menu_header"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:clickable="true"
+            android:background="@drawable/default_menu_backdrop"
+            >
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用睿思账号登陆"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                />
+            <ImageView
+                android:id="@+id/iv_login_area"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:baselineAlignBottom="@+id/tv_user_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_add_white_24dp"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c2c2c2"
+            />
+        <ListView
+            android:id="@+id/lv_nav_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

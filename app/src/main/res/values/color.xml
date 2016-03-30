@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#7986cb</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="actionbar_color">#3f51b5</color>
+    <color name="Indigo_colorPrimary">#303f9f</color>
+    <color name="Indigo_accentColor">#4675FF</color>
+
+    <color name="user_item_pressed">#e3e3e3</color>
+
+    <color name="upgrade_title_color">#5C5C5C</color>
+    <color name="upgrade_content_color">#A8A8A8</color>
+
+    <color name="notification_back_color">#181818</color>
+
+</resources>

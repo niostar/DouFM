@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:weightSum="1"
+    >
+
+    <ImageView
+        android:id="@+id/iv_channal_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_audiotrack_grey600_48dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_channal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="未获取"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+</LinearLayout>

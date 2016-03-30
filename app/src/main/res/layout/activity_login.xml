@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_login_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/default_artist_300" />
+
+            <EditText
+
+                android:id="@+id/et_activity_login_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_login_logo"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="8dp"
+                android:hint="请输入用户名"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_activity_login_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_activity_login_user_name"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="8dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
+
+
+
+            <CheckBox
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/et_activity_login_user_password"
+                android:id="@+id/cbSavePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:text="记住密码"
+                android:checked="true"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_activity_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cbSavePassword"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_login"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
